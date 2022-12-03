@@ -1,0 +1,45 @@
+.header{
+    padding: 10px 0;
+    background-color: $header;
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        margin-right: 50px;
+    }
+    &__search{
+        flex: 1 0 auto;
+        border-radius: 5px;
+    }
+    &__login-btn{
+    }
+    
+}
+.magnifying-glass {
+    position: relative;
+    
+    width: 100px;
+    height: 100px; 
+    
+    box-sizing: border-box;
+    background-color: aliceblue;
+    
+    border: 15px solid slategray;
+    border-radius: 50%;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+        width: 50px;
+        height: 15px;
+        background-color: slategray;
+        
+        border-radius: 0 7.5px 7.5px 0;
+        
+        transform-origin: 0 50%;
+        transform: translateX(100%) rotate(45deg);
+    }
+}

@@ -3,6 +3,7 @@
 @import "_mixins";
 @import "_fonts";
 @import "_header";
+@import "_popup";
 @import "_events";
 
 body{
@@ -20,9 +21,6 @@ body{
     color: black;
     &:visited{
         color: black;
-    }
-    &:active{
-        color: #DDEDED;
     }
 }
 .btn{
@@ -44,5 +42,5 @@ body{
 input{
     font-size: 22px;
     color: #9B9999;
-    padding: 4px 8px;
+    padding: 7px 8px;
 }
